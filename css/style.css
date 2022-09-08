@@ -1,0 +1,10 @@
+#albums li{
+    list-style: none;
+    font-size: 18px;
+    color:blueviolet;
+    font-weight: 800;
+}
+#albums li:first-letter{
+    text-transform: capitalize;
+    color: black;
+}
