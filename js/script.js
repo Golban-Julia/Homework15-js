@@ -33,8 +33,7 @@ const ul = document.getElementById("albums");
 fetch(url)
     .then((response) => response.json())
     .then((result) => {
-        let albums = result;
-        albums.map(function (album) {
+        result.map(function (album) {
             let li = document.createElement('li');
             ul.appendChild(li);
             li.innerHTML = album.title;
